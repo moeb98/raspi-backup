@@ -20,3 +20,16 @@ should be 'installed' as a cronjob:
 ```bash
 sudo crontab -e
 ```
+
+## Flags
+
+The script can be called with various flags configuring its behaviour. Namely these
+are:
+
+* ```-p``` defines the path to the backup folder, defaults to
+  ```/mnt/nas/raspi-backup```
+* ```-n``` defines the name of the backup file (automatically supplemented by the
+  timestamp, defaults to ```raspi-backup```
+* ```-r``` defines the number revisions to be kept as backup, defaults to ```5```
+* ```-m``` defines whether the backup folder path needs to be mounted first,
+  defaults to ```false```
